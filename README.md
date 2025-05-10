@@ -109,6 +109,120 @@ y=x*x
 y
 ```
 ![image](https://github.com/user-attachments/assets/06fb7be9-069b-4e1e-a2b2-523edaef126e)
+```
+plt.plot(x,y,'g*',linestyle='dashed',linewidth=2,markersize=12)
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+plt.title('2d Diagram')
+plt.legend(['y-values']);
+```
+![image](https://github.com/user-attachments/assets/5fc0b718-8ff2-4706-8d82-6a8da37e19dc)
+```
+x=np.arange(0,4*np.pi,0.1)
+y=np.sin(x)
+plt.title("sine wave form")
+plt.plot(x,y)
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/2f9a0572-7232-4b7f-8e90-d9a801a699d3)
+```
+import matplotlib.pyplot as plt
+import numpy as np
+x=[1,2,3,4,5]
+y1=[10,12,14,16,18]
+y2=[5,7,9,11,13]
+y3=[2,4,6,8,10]
+plt.fill_between(x,y1,color='blue')
+plt.fill_between(x,y2,color='green')
+```
+![image](https://github.com/user-attachments/assets/f7712c1f-7bdd-4aac-8e2c-bfab82747cfa)
+```
+import matplotlib.pyplot as plt
+import numpy as np
+x=[1,2,3,4,5]
+y1=[10,12,14,16,18]
+y2=[5,7,9,11,13]
+y3=[2,4,6,8,10]
+plt.fill_between(x,y1,color='blue')
+plt.fill_between(x,y2,color='green')
+plt.plot(x,y1,color='red')
+plt.plot(x,y2,color='black')
+plt.legend(['y1','y2'])
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/9dab6462-5dca-40e7-bbeb-cac7721100a4)
+```
+import matplotlib.pyplot as plt
+height=[10,24,36,40,5]
+names=['one','two','three','four','five']
+c1=['red','green']
+c2=['b','g']
+plt.bar(names,height,width=0.8,color=c1)
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('My bar chart!')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/cb1e3d10-7d73-42eb-94bc-8975df55a7d5)
+```
+x=[2,8,10]
+y=[11,16,9]
+x2=[3,9,11]
+y2=[6,15,7]
+plt.bar(x,y,color='r')
+plt.bar(x2,y2,color='g')
+plt.title('Bar graph')
+plt.ylabel('Y axis')
+plt.xlabel('X axis')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/fe69911e-d4af-4739-a525-97aa5c33cc2a)
+```
+import matplotlib.pyplot as plt
+ages=[2,5,70,40,30,45,50,45,43,40,44,60,7,13,57,18,90,77,32,21,20,40]
+range=(0,100)
+bins=10
+plt.hist(ages,bins,range,color='green',histtype='bar',rwidth=0.8)
+plt.xlabel('age')
+plt.ylabel('No. of people')
+plt.title('My histogram')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/e56e72cd-2887-4428-b728-63d99a07a54a)
+```
+import matplotlib.pyplot as plt
+import numpy as np
+np.random.seed(0)
+data=np.random.normal(loc=0,scale=1,size=100)
+data
+```
+![image](https://github.com/user-attachments/assets/7d1fb3f2-66da-4053-872a-bb2191b43746)
+```
+fig,ax=plt.subplots()
+ax.boxplot(data)
+ax.set_xlabel('Data')
+ax.set_ylabel('Values')
+ax.set_title('Box Plot')
+```
+![image](https://github.com/user-attachments/assets/779ff3bc-ed9c-4ace-8fab-8327b3f20d08)
+```
+labels='Python','C++','Ruby','Java'
+sizes=[215,130,245,210]
+colors=['gold','yellowgreen','lightcoral','lightskyblue']
+explode=(0,0.4,0,0.5)
+plt.pie(sizes,explode=explode,labels=labels,colors=colors,autopct='%1.1f%%',shadow=True)
+plt.axis('equal')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/ca71f190-de55-43d6-b991-b616f45832aa)
+```
+activities=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['r','y','g','b']
+plt.pie(slices,labels=activities,colors=colors,startangle=90,shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+```
+![image](https://github.com/user-attachments/assets/47150cd0-8e99-4a47-a25c-b5f9e96fa859)
 
 # Result:
- Include your result here
+  Thus the program to perform Data Visualization using matplot python library for the given datas is executed successfully.
